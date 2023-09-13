@@ -7,9 +7,10 @@ import {
   BsPeople,
   BsFillPersonLinesFill,
 } from "react-icons/bs"
-import SectionLink from "./SectionLink"
 
-const Sidebar = () => {
+import SidebarOpt from "./components/SidebarOpt"
+
+const Sidebar = ({ select }) => {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
@@ -23,21 +24,24 @@ const Sidebar = () => {
       className="w-[60px] h-screen py-7 flex flex-col items-center 
       justify-between bg-zinc-300 dark:bg-zinc-900"
     >
-      <img className="h-[35px]" src="./logo.png" alt="logo" />
+      <img className="h-[35px]" src="/logo.svg" alt="logo" />
 
       <div className="h-3/5 flex flex-col gap-6">
-        <SectionLink>
+        <SidebarOpt option="conversas" select={select}>
           <BsChatLeft />
-        </SectionLink>
-        <SectionLink>
-          <BsFillPersonLinesFill />
-        </SectionLink>
-        <SectionLink>
+        </SidebarOpt>
+
+        <SidebarOpt option="grupos" select={select}>
           <BsPeople />
-        </SectionLink>
-        <SectionLink>
+        </SidebarOpt>
+
+        <SidebarOpt option="contatos" select={select}>
+          <BsFillPersonLinesFill />
+        </SidebarOpt>
+
+        <SidebarOpt option="perfil" select={select}>
           <BsPersonGear />
-        </SectionLink>
+        </SidebarOpt>
       </div>
 
       <span

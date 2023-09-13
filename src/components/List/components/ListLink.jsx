@@ -1,9 +1,11 @@
 import React from "react"
 import { BsPerson } from "react-icons/bs"
+import { Link } from "react-router-dom"
 
-const Contact = () => {
+const ListLink = ({ to }) => {
   return (
-    <div
+    <Link
+      to={to}
       className=" flex items-center gap-2 p-3 hover:bg-zinc-300
       dark:hover:bg-zinc-700 transition duration-300 cursor-pointer"
     >
@@ -37,8 +39,8 @@ const Contact = () => {
           <p className="text-[12px] font-medium text-teal-500">14:35</p>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 
-export default Contact
+export default ListLink

@@ -1,15 +1,16 @@
 import React from "react"
-import { BsPerson } from "react-icons/bs"
 
-import ChatHeader from "./ChatHeader"
-import InputMessage from "./InputMessage"
-import ChatBox from "./ChatBox"
+import ChatHeader from "./chatComponents/ChatHeader"
+import InputMessage from "./chatComponents/InputMessage"
+import ChatBox from "./chatComponents/ChatBox"
+import ContactProfile from "../ContactProfile"
 
-const Chat = () => {
+const ChatWindow = () => {
   return (
-    <div className="flex-1 flex flex-col box-border bg-zinc-300 dark:bg-zinc-800">
-      <ChatHeader />
+    <div className="w-full h-full flex relative flex-col box-border bg-zinc-300 dark:bg-zinc-800">
+      <ContactProfile />
 
+      <ChatHeader />
       <div className="h-[90%] flex flex-col">
         <div className="flex flex-col-reverse gap-4 h-[90%] p-5 overflow-auto">
           <ChatBox text={"doideira maluco"} time={"12:30"} isUser={true} />
@@ -76,4 +77,4 @@ const Chat = () => {
   )
 }
 
-export default Chat
+export default ChatWindow
