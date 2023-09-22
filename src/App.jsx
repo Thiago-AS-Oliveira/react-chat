@@ -6,11 +6,14 @@ import ChatWindow from "./components/ChatWindow"
 import Initial from "./components/ChatWindow/chatComponents/Initial"
 import Home from "./pages/Home"
 import ContactProfile from "./components/ContactProfile"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
 
 const App = () => {
   const router = createBrowserRouter([
     { path: "/", element: <Home /> },
-    { path: "/auth", element: <AppBase /> },
+    { path: "/login", element: <Login /> },
+    { path: "/cadastro", element: <Register /> },
     {
       path: "/app",
       element: <AppBase />,

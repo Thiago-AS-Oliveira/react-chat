@@ -4,6 +4,7 @@ export default {
   darkMode: "class",
   theme: {
     boxShadow: {
+      simple: "1px 1px 3px #0004",
       around: "0 0 5px #0004",
       aroundSm: "0 0 3px #0004",
     },

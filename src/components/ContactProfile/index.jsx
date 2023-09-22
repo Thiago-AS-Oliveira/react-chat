@@ -5,7 +5,7 @@ const ContactProfile = () => {
   return (
     <div
       id="background"
-      className="w-full h-full absolute z-10 bg-[#0005] backdrop-blur
+      className="w-full h-full absolute z-10 bg-[#0002] backdrop-blur
     flex items-center justify-center
     "
     >

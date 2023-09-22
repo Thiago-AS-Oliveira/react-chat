@@ -7,10 +7,14 @@ import ContactProfile from "../ContactProfile"
 
 const ChatWindow = () => {
   return (
-    <div className="w-full h-full flex relative flex-col box-border bg-zinc-300 dark:bg-zinc-800">
-      <ContactProfile />
+    <div
+      className="w-full h-full flex relative flex-col box-border 
+    bg-[url(/backgrounds/bgChat.png)] bg-cover bg-zinc-100 dark:bg-zinc-700"
+    >
+      {/* <ContactProfile /> */}
 
       <ChatHeader />
+
       <div className="h-[90%] flex flex-col">
         <div className="flex flex-col-reverse gap-4 h-[90%] p-5 overflow-auto">
           <ChatBox text={"doideira maluco"} time={"12:30"} isUser={true} />

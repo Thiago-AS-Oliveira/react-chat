@@ -5,7 +5,7 @@ import List from "../components/List"
 
 const AppBase = () => {
   return (
-    <div className="flex h-screen">
+    <div className="flex h-screen bg-zinc-100 dark:bg-zinc-700">
       <List />
       <div className="h-full w-full relative">
         <Outlet />

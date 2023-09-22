@@ -1,14 +1,14 @@
 import React from "react"
 
 const ChatBox = ({ text, time, isUser }) => {
-  const contact = "bg-zinc-100 dark:bg-zinc-700"
+  const contact = "bg-zinc-50 dark:bg-zinc-600"
   const user =
-    "bg-teal-200 text-zinc-950 dark:text-zinc-50 dark:bg-teal-600  ml-auto"
+    "bg-teal-200 text-zinc-700 dark:text-zinc-100 dark:bg-teal-500  ml-auto"
 
   return (
     <div
       className={`${isUser ? user : contact} shadow-aroundSm
-      px-4 py-2 w-fit max-w-[90%] flex items-end gap-2`}
+      px-4 py-3 w-fit max-w-[90%] flex items-end gap-2`}
     >
       <p>{text}</p>
 

@@ -10,7 +10,7 @@ import {
 
 import SidebarOpt from "./components/SidebarOpt"
 
-const Sidebar = ({ select }) => {
+const Sidebar = ({ select, sectionSelected }) => {
   const [darkMode, setDarkMode] = useState(false)
 
   useEffect(() => {
@@ -22,30 +22,46 @@ const Sidebar = ({ select }) => {
   return (
     <div
       className="w-[60px] h-screen py-7 flex flex-col items-center 
-      justify-between bg-zinc-300 dark:bg-zinc-900"
+      justify-between bg-teal-400"
     >
-      <img className="h-[35px]" src="/logo.svg" alt="logo" />
+      <img className="h-[35px]" src="/logoBranco.svg" alt="logo" />
 
       <div className="h-3/5 flex flex-col gap-6">
-        <SidebarOpt option="conversas" select={select}>
+        <SidebarOpt
+          sectionSelected={sectionSelected}
+          option="conversas"
+          select={select}
+        >
           <BsChatLeft />
         </SidebarOpt>
 
-        <SidebarOpt option="grupos" select={select}>
+        <SidebarOpt
+          sectionSelected={sectionSelected}
+          option="grupos"
+          select={select}
+        >
           <BsPeople />
         </SidebarOpt>
 
-        <SidebarOpt option="contatos" select={select}>
+        <SidebarOpt
+          sectionSelected={sectionSelected}
+          option="contatos"
+          select={select}
+        >
           <BsFillPersonLinesFill />
         </SidebarOpt>
 
-        <SidebarOpt option="perfil" select={select}>
+        <SidebarOpt
+          sectionSelected={sectionSelected}
+          option="perfil"
+          select={select}
+        >
           <BsPersonGear />
         </SidebarOpt>
       </div>
 
       <span
-        className="w-10 h-10 rounded text-2xl hover:text-3xl
+        className="w-10 h-10 text-2xl text-zinc-100 hover:text-3xl
         flex items-center justify-center transition-all duration-500 
         ease-in-out cursor-pointer"
         onClick={() => setDarkMode(!darkMode)}

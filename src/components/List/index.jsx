@@ -17,12 +17,12 @@ const List = () => {
 
   return (
     <div className="flex">
-      <Sidebar select={setSection} />
+      <Sidebar select={setSection} sectionSelected={section} />
 
       <div
         className="w-[350px] flex flex-col items-center pt-7
     border-r overflow-hidden border-zinc-300 dark:border-zinc-600 
-    bg-zinc-200 dark:bg-zinc-800"
+    bg-zinc-100 dark:bg-zinc-700"
       >
         {sections[section]}
       </div>
