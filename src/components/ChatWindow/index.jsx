@@ -16,7 +16,7 @@ const ChatWindow = () => {
       <ChatHeader />
 
       <div className="h-[90%] flex flex-col">
-        <div className="flex flex-col-reverse gap-4 h-[90%] p-5 overflow-auto">
+        <div className="flex flex-col-reverse gap-4 h-[90%] p-5 overflow-auto lg:px-3">
           <ChatBox text={"doideira maluco"} time={"12:30"} isUser={true} />
 
           <ChatBox

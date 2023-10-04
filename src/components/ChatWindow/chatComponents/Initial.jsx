@@ -6,8 +6,11 @@ const Initial = () => {
       className="w-full h-full bg-zinc-100 dark:bg-zinc-700  
       bg-cover bg-[url(./backgrounds/bgInicio.png)] flex flex-col gap-5 items-center justify-center"
     >
-      <div className="bg-zinc-100 dark:bg-zinc-700 py-10 px-12 shadow-around">
-        <img src="./images/app.svg" alt="figura app" />
+      <div
+        className="bg-zinc-100 dark:bg-zinc-700 p-12 shadow-around flex items-center
+      justify-center h-3/5 2xl:h-2/4"
+      >
+        <img src="./images/app.svg" alt="figura app" className="h-full" />
       </div>
     </div>
   )

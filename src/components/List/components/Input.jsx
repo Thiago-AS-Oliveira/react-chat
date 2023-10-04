@@ -2,11 +2,12 @@ import React from "react"
 
 const Input = ({ placeholder }) => {
   return (
-    <div className="h-[80px] px-3 flex items-center">
+    <div className="h-1/6 w-full px-4  flex items-center">
       <input
-        className="px-3 h-[35px] w-full text-zinc-900 shadow-around outline-0"
+        className="px-3 h-10 w-full text-zinc-900 shadow-around outline-0
+        2xl:h-2/6 2xl:text-[1.1vw] 2xl:px-5"
         type="text"
-        placeholder="Pesquisar grupos"
+        placeholder={placeholder}
       />
     </div>
   )

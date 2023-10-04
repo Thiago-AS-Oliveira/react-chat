@@ -3,6 +3,13 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   darkMode: "class",
   theme: {
+    screens: {
+      lg: { max: "1024px" },
+      mdlg: { max: "992px" },
+      md: { max: "820px" },
+      sm: { max: "480px" },
+      "2xl": "1441px",
+    },
     boxShadow: {
       simple: "1px 1px 3px #0004",
       around: "0 0 5px #0004",

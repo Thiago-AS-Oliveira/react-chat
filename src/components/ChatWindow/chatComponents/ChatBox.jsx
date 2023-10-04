@@ -8,11 +8,12 @@ const ChatBox = ({ text, time, isUser }) => {
   return (
     <div
       className={`${isUser ? user : contact} shadow-aroundSm
-      px-4 py-3 w-fit max-w-[90%] flex items-end gap-2`}
+      px-4 py-3 w-fit max-w-[90%] flex items-end gap-2 
+      2xl:text-[1.2vw] 2xl:px-[1vw] 2xl:py-[.8vw]`}
     >
       <p>{text}</p>
 
-      <span className="text-xs">{time}</span>
+      <span className="text-xs 2xl:text-[.9vw]">{time}</span>
     </div>
   )
 }

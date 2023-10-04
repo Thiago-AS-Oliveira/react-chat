@@ -7,6 +7,7 @@ import GroupsList from "./components/GroupsList"
 import ChatList from "./components/ChatList"
 
 const List = () => {
+  const [showMenu, setShowMenu] = useState(true)
   const [section, setSection] = useState("conversas")
   const sections = {
     conversas: <ChatList />,
@@ -16,13 +17,16 @@ const List = () => {
   }
 
   return (
-    <div className="flex">
+    <div
+      className={`flex w-[30%] lg:w-[90%] lg:fixed lg:z-10 
+      ${!showMenu ? "lg:left-[-100%]" : "lg:left-0"}`}
+    >
       <Sidebar select={setSection} sectionSelected={section} />
 
       <div
-        className="w-[350px] flex flex-col items-center pt-7
-    border-r overflow-hidden border-zinc-300 dark:border-zinc-600 
-    bg-zinc-100 dark:bg-zinc-700"
+        className="flex-1 flex flex-col items-center pt-7 2xl:pt-12
+        border-r overflow-hidden border-zinc-300 dark:border-zinc-600 
+      bg-zinc-100 dark:bg-zinc-700"
       >
         {sections[section]}
       </div>

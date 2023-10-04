@@ -21,12 +21,16 @@ const Sidebar = ({ select, sectionSelected }) => {
 
   return (
     <div
-      className="w-[60px] h-screen py-7 flex flex-col items-center 
-      justify-between bg-teal-400"
+      className="w-[15%] h-screen py-7 flex flex-col items-center 
+      justify-between bg-teal-400 2xl:py-12 lg:w-[50px]"
     >
-      <img className="h-[35px]" src="/logoBranco.svg" alt="logo" />
+      <img
+        className="h-[35px] 2xl:h-[2vw] lg:h-[25px]"
+        src="/logoBranco.svg"
+        alt="logo"
+      />
 
-      <div className="h-3/5 flex flex-col gap-6">
+      <div className="h-3/5 flex flex-col gap-6 2xl:gap-[10%]">
         <SidebarOpt
           sectionSelected={sectionSelected}
           option="conversas"
@@ -63,7 +67,7 @@ const Sidebar = ({ select, sectionSelected }) => {
       <span
         className="w-10 h-10 text-2xl text-zinc-100 hover:text-3xl
         flex items-center justify-center transition-all duration-500 
-        ease-in-out cursor-pointer"
+        ease-in-out cursor-pointer 2xl:text-[2vw]"
         onClick={() => setDarkMode(!darkMode)}
       >
         {darkMode ? <BsMoon /> : <BsSun />}

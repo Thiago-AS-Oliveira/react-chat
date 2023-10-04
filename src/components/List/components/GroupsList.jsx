@@ -5,12 +5,12 @@ import ListLink from "./ListLink"
 
 const GroupsList = () => {
   return (
-    <div className="w-full h-full flex flex-col items-center animate-slide">
+    <div className="w-full h-full flex flex-col items-center animate-slide px-3">
       <ListHeader section="Grupos" />
 
       <Input placeholder="Pesquisar grupos" />
 
-      <div className="flex-1 w-full px-2 overflow-auto items-center">
+      <div className="flex-1 w-full overflow-auto items-center">
         <ListLink to="grupo/12344" />
         <ListLink to="grupo/12344sjhagav" />
         <ListLink to="grupo/12asdasd344" />
