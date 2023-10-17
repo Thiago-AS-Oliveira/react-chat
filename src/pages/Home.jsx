@@ -13,7 +13,7 @@ const Home = () => {
       >
         <img src="./logo.svg" alt="logo" className="h-12 2xl:h-1/3 sm:hidden" />
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-4">
           <Link
             to="/login"
             className="w-36 h-10 bg-teal-400 text-zinc-100 flex items-center 

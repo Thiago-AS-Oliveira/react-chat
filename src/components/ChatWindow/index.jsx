@@ -4,19 +4,21 @@ import ChatHeader from "./chatComponents/ChatHeader"
 import InputMessage from "./chatComponents/InputMessage"
 import ChatBox from "./chatComponents/ChatBox"
 import ContactProfile from "../ContactProfile"
+import UserProfile from "../UserProfile."
 
 const ChatWindow = () => {
   return (
     <div
-      className="w-full h-full flex relative flex-col box-border 
-    bg-[url(/backgrounds/bgChat.png)] bg-cover bg-zinc-100 dark:bg-zinc-700"
+      className="w-full h-full flex flex-col box-border relative 
+      bg-[url(/backgrounds/bgChat.png)] bg-cover bg-zinc-100 dark:bg-zinc-700"
     >
       {/* <ContactProfile /> */}
 
+      {/* <UserProfile /> */}
       <ChatHeader />
 
-      <div className="h-[90%] flex flex-col">
-        <div className="flex flex-col-reverse gap-4 h-[90%] p-5 overflow-auto lg:px-3">
+      <div className="h-[90%] flex flex-col justify-end">
+        <div className="max-h-[90%] flex flex-col-reverse gap-4 p-5 overflow-auto lg:px-3">
           <ChatBox text={"doideira maluco"} time={"12:30"} isUser={true} />
 
           <ChatBox
@@ -52,6 +54,11 @@ const ChatWindow = () => {
             time={"14:26"}
           />
 
+          <ChatBox text={"Bom dia"} time={"12:30"} isUser={true} />
+
+          <ChatBox text={"Bom dia"} time={"12:30"} isUser={true} />
+          <ChatBox text={"Bom dia"} time={"12:30"} isUser={true} />
+          <ChatBox text={"Bom dia"} time={"12:30"} isUser={true} />
           <ChatBox text={"Bom dia"} time={"12:30"} isUser={true} />
 
           <ChatBox

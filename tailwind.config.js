@@ -8,7 +8,7 @@ export default {
       mdlg: { max: "992px" },
       md: { max: "820px" },
       sm: { max: "480px" },
-      "2xl": "1441px",
+      "2xl": "1536px",
     },
     boxShadow: {
       simple: "1px 1px 3px #0004",

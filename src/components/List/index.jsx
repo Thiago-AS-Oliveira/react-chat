@@ -1,24 +1,23 @@
 import React, { useState } from "react"
 
-import UserProfile from "./components/UserProfile"
 import Sidebar from "../SideBar"
 import ContactList from "./components/ContactList"
 import GroupsList from "./components/GroupsList"
 import ChatList from "./components/ChatList"
 
 const List = () => {
-  const [showMenu, setShowMenu] = useState(true)
+  const [showMenu, setShowMenu] = useState(false)
   const [section, setSection] = useState("conversas")
+
   const sections = {
     conversas: <ChatList />,
     grupos: <GroupsList />,
     contatos: <ContactList />,
-    perfil: <UserProfile />,
   }
 
   return (
     <div
-      className={`flex w-[30%] lg:w-[90%] lg:fixed lg:z-10 
+      className={`h-full flex w-[30%] lg:w-[90%] lg:fixed lg:z-10 
       ${!showMenu ? "lg:left-[-100%]" : "lg:left-0"}`}
     >
       <Sidebar select={setSection} sectionSelected={section} />

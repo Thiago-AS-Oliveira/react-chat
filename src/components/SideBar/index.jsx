@@ -21,7 +21,7 @@ const Sidebar = ({ select, sectionSelected }) => {
 
   return (
     <div
-      className="w-[15%] h-screen py-7 flex flex-col items-center 
+      className="w-[15%] h-full py-7 flex flex-col items-center 
       justify-between bg-teal-400 2xl:py-12 lg:w-[50px]"
     >
       <img
@@ -30,7 +30,7 @@ const Sidebar = ({ select, sectionSelected }) => {
         alt="logo"
       />
 
-      <div className="h-3/5 flex flex-col gap-6 2xl:gap-[10%]">
+      <div className="h-2/5 flex flex-col gap-6 2xl:gap-[10%]">
         <SidebarOpt
           sectionSelected={sectionSelected}
           option="conversas"
@@ -54,24 +54,26 @@ const Sidebar = ({ select, sectionSelected }) => {
         >
           <BsFillPersonLinesFill />
         </SidebarOpt>
-
-        <SidebarOpt
-          sectionSelected={sectionSelected}
-          option="perfil"
-          select={select}
-        >
-          <BsPersonGear />
-        </SidebarOpt>
       </div>
 
-      <span
-        className="w-10 h-10 text-2xl text-zinc-100 hover:text-3xl
+      <div className="flex flex-col items-center gap-6">
+        <button
+          className="w-11 h-11 text-3xl text-zinc-100 flex items-center justify-center
+          hover:bg-teal-500 transition-all duration-500 ease-in-out cursor-pointer 
+          2xl:text-[1.5vw] 2xl:w-[3vw] 2xl:h-[3vw]"
+        >
+          <BsPersonGear />
+        </button>
+
+        <button
+          className="w-10 h-10 text-2xl text-zinc-100 hover:text-3xl
         flex items-center justify-center transition-all duration-500 
         ease-in-out cursor-pointer 2xl:text-[2vw]"
-        onClick={() => setDarkMode(!darkMode)}
-      >
-        {darkMode ? <BsMoon /> : <BsSun />}
-      </span>
+          onClick={() => setDarkMode(!darkMode)}
+        >
+          {darkMode ? <BsMoon /> : <BsSun />}
+        </button>
+      </div>
     </div>
   )
 }

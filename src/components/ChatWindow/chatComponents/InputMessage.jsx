@@ -4,8 +4,9 @@ import { BsEmojiSmile, BsPaperclip, BsSend } from "react-icons/bs"
 const InputMessage = () => {
   return (
     <div
-      className="min-h-[10%] max-h-[40%]
- flex items-center justify-between px-5 py-2 lg:px-3"
+      className="min-h-[12%] max-h-[40%] flex items-center sticky bottom-0
+      justify-between px-5 py-2 lg:px-3 bg-zinc-100 border-t border-zinc-200
+      dark:border-zinc-600 dark:bg-zinc-700"
     >
       <textarea
         className="w-5/6 px-3 py-2 bg-zinc-100 text-zinc-900 outline-none 

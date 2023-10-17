@@ -3,7 +3,7 @@ import React from "react"
 const ChatBox = ({ text, time, isUser }) => {
   const contact = "bg-zinc-50 dark:bg-zinc-600"
   const user =
-    "bg-teal-200 text-zinc-700 dark:text-zinc-100 dark:bg-teal-500  ml-auto"
+    "bg-teal-400 text-zinc-700 dark:text-zinc-100 dark:bg-teal-500  ml-auto"
 
   return (
     <div

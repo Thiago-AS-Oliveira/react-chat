@@ -6,20 +6,21 @@ const ContactProfile = () => {
     <div
       id="background"
       className="w-full h-full absolute z-10 bg-[#0002] backdrop-blur
-    flex items-center justify-center
+    flex items-center justify-center sm:p-4
     "
     >
       <div
         className="bg-zinc-100 dark:bg-zinc-700 w-2/4 h-3/4 shadow-around
-      flex flex-col items-center gap-5 pb-10 2xl:h-3/5 2xl:pb-14"
+      flex flex-col items-center gap-5 pb-10 2xl:h-3/5 2xl:pb-14 lg:h-[500px]
+      sm:w-full"
       >
         <div
           className="bg-zinc-200 dark:bg-zinc-800 border-b border-zinc-300 
         dark:border-zinc-600 w-full h-2/4 flex items-center justify-center"
         >
           <div
-            className="bg-zinc-100 text-zinc-900 text-[5vw] p-[2vw] rounded-full 
-          shadow-aroundSm "
+            className="bg-zinc-100 text-zinc-900 p-6 text-7xl
+            2xl:text-[5vw] 2xl:p-[2vw] rounded-full shadow-aroundSm text"
           >
             <BsPerson />
           </div>
